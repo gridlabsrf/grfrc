@@ -1390,3 +1390,117 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
+
+/* ===================== RESPONSIVE (TABLET 1024px) ===================== */
+@media (max-width: 1024px) {
+  .s2-layout, .s4-layout, .s7-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100%;
+  }
+  .s2-left, .s4-left, .s7-panel {
+    padding: 60px 40px;
+  }
+  .s2-right, .s4-right {
+    padding: 60px 40px;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pillars-grid, .advisory-grid, .strengths-row, .sectors-grid, .process-steps, .advantage-grid, .highlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlight-card {
+    grid-column: span 1 !important;
+  }
+  .slide {
+    padding: 60px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+  .slide::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+/* ===================== RESPONSIVE (MOBILE 768px) ===================== */
+@media (max-width: 768px) {
+  .slide {
+    padding: 40px 20px;
+  }
+  .s1-content {
+    padding: 40px 20px;
+    justify-content: center;
+  }
+  .s1-orb {
+    display: none;
+  }
+  .s2-layout, .s4-layout, .s7-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .s2-left, .s2-right, .s4-left, .s4-right, .s7-panel {
+    padding: 40px 20px;
+  }
+  .pillars-grid, .advisory-grid, .strengths-row, .philosophy-grid, .sectors-grid, .process-steps, .highlight-grid, .advantage-grid, .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  .slide-title {
+    font-size: clamp(32px, 8vw, 40px);
+  }
+  .s1-title {
+    font-size: clamp(48px, 12vw, 64px);
+  }
+  .vm-title {
+    font-size: 40px;
+  }
+  .founder-name {
+    font-size: 28px;
+  }
+  .cta-title {
+    font-size: clamp(40px, 10vw, 52px);
+  }
+  .contact-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .slide-bg-num {
+    font-size: 80px;
+    bottom: 80px;
+    right: 20px;
+  }
+  #nav {
+    padding: 8px 16px;
+    gap: 10px;
+    bottom: 20px;
+  }
+  #slide-counter {
+    min-width: 50px;
+    font-size: 10px;
+  }
+  .nav-btn {
+    padding: 4px 8px;
+  }
+  #key-hint {
+    display: none;
+  }
+  /* Additional mobile spacing adjustments */
+  .s1-tagline {
+    margin-bottom: 16px;
+  }
+  .s1-sub {
+    font-size: 18px;
+  }
+  .s1-badge {
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+  .slide-body {
+    font-size: 13px;
+  }
+  .fp {
+    padding: 12px 16px;
+  }
+}
